@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="/formLogin.css">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+</head>
+<body id="body">
+    <!-- <div> 
+        <h2>Danh sách sinh viên</h2>
+        <ul id="list_student"></ul>
+    </div> -->
+    <div class="validator form-login-main">
+        <form class="form form-login">
+            <h2>Đăng nhập</h2>
+            <div>
+                <div>
+                    <label>Email: </label>
+                    <input class="input-validator" type="email" id="id-login" name="id">
+                </div>
+                <div>
+                    <label>Password: </label>
+                    <input class="input-validator" type="password" id="psw-login" name="psw">
+                </div>
+                <div>
+                    <button class="login-btn btn" type="submit">Đăng nhập</button> 
+                </div>              
+            </div>
+        </form>
+        <button class="change-page-btn btn">Chuyển qua trang đăng ký</button>
+    </div>
+    
+    <form class="exit-btn-place"></form>
+    
+    <div class="validator form-register-main appear">
+        <form class="form form-register">
+            <h2>Đăng ký</h2>
+            <div>
+                <div>
+                    <label>Email: </label>
+                    <input class="input-validator" type="email" id="id-register" name="id">
+                </div>
+                <div>
+                    <label>Password: </label>
+                    <input class="input-validator" type="password" id="psw-register" name="psw">
+                </div>
+                <!-- <div>
+                    <label>Email: </label>
+                    <input class="input-validator" type="email" id ="email" name="email">
+                </div> -->
+                <div>
+                    <button class="register-btn btn" type="submit">Đăng ký</button> 
+                    <!-- <button class="readData">read and write data</button> -->
+                </div>              
+            </div>
+        </form>
+        <button class="change-page-btn btn">Chuyển qua trang đăng nhập</button>
+    </div>
+    
+    <div id="container-main-page" class="appear"></div>
+    <script src="/event.js"></script>
+</body>
+</html>
+
+<script type="module" src="./server.js"></script>
